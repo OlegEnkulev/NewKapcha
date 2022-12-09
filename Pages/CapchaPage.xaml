@@ -1,0 +1,18 @@
+﻿<Page x:Class="NewKapcha.Pages.CapchaPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NewKapcha.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CapchaPage">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Image x:Name="ImagePlace" Width="300" Height="300"/>
+        <Label Content="Введите капчу:"/>
+        <TextBox x:Name="CapchaBox"/>
+        <Label x:Name="CapchaTimerLabel" Content="0"/>
+        <Button Content="Подтвердить" x:Name="ConfirmBTN" Click="ConfirmBTN_Click" IsEnabled="False"/>
+    </StackPanel>
+</Page>
